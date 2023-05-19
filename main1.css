@@ -1,0 +1,57 @@
+.wrap{
+    width: 1500px;
+    height: 800px;
+    border: 5px solid blue;
+    margin-top: 100px;
+    margin-left: 110px;
+}
+.loader{
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 20%;
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    animation-name: loader;
+    animation-direction: normal;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes loader {
+    12%{
+    transform: translate(0,-100px);
+    background-color: #7de29e;
+    }
+    25%{
+    transform: translate(300px,-100px) rotateZ(360deg);
+        background-color: #1c4fd3;
+    }
+    37%{
+    transform: translate(300px,-200px);
+        background-color: red;
+}
+    50%{
+    transform: translate(500px,-200px) rotateZ(360deg);
+        background-color: orange;
+    }
+    63%{
+    transform: translate(500px,-100px);
+        background-color: thistle;
+    }
+    75%{
+        transform: translate(700px,-100px)rotateZ(360deg);
+        background-color: greenyellow;
+    }
+    87%{
+        transform: translate(700px,0);
+        background-color: salmon ;
+    }
+    100%{
+        transform: translate(0,0) rotateZ(720deg);
+        background-color: black;
+    }
+
+
+}
